@@ -43,7 +43,7 @@ class UserProvider extends ChangeNotifier {
     if (Navigator.canPop(context)) {
       Navigator.pop(context);
     } else {
-      Navigator.pushReplacementNamed(context, 'home');
+      Navigator.pushReplacementNamed(context, 'main_page');
     }
   }
 

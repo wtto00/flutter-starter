@@ -79,10 +79,10 @@ class _MyAppState extends State<MyApp> {
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
           ],
-          initialRoute: Global.agreement == true ? 'home' : 'agreement',
+          initialRoute: Global.agreement == true ? 'main_page' : 'agreement',
           routes: {
             'agreement': (_) => const Agreement(),
-            'home':
+            'main_page':
                 (_) => PopScope(
                   canPop: false,
                   onPopInvokedWithResult: _onPopInvokedWithResult,

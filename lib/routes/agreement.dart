@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_starter/common/config.dart';
 import 'package:flutter_starter/common/global.dart';
 
 class Agreement extends StatefulWidget {
@@ -65,10 +66,10 @@ class _AgreementState extends State<Agreement> {
                             children: [
                               fontSpace,
                               const TextSpan(
-                                text: "追书神器非常重视您的个人信息和隐私保护。根据国家相关法律规定和标准更新了",
+                                text: "xxxx非常重视您的个人信息和隐私保护。根据国家相关法律规定和标准更新了",
                               ),
                               TextSpan(
-                                text: "《追书神器免费版用户协议》",
+                                text: "《xxxx用户协议》",
                                 style: TextStyle(
                                   color: Theme.of(context).colorScheme.primary,
                                   decoration: TextDecoration.underline,
@@ -81,15 +82,14 @@ class _AgreementState extends State<Agreement> {
                                         Navigator.of(context).pushNamed(
                                           "web",
                                           arguments: {
-                                            "url":
-                                                "https://www.zhuishushenqi.com/agreement",
+                                            "url": Config.userProtocol,
                                           },
                                         );
                                       },
                               ),
                               const TextSpan(text: "和"),
                               TextSpan(
-                                text: "《追书神器免费版用户隐私保护政策》",
+                                text: "《xxxx用户隐私保护政策》",
                                 style: TextStyle(
                                   color: Theme.of(context).colorScheme.primary,
                                   decoration: TextDecoration.underline,
@@ -102,8 +102,7 @@ class _AgreementState extends State<Agreement> {
                                         Navigator.of(context).pushNamed(
                                           "web",
                                           arguments: {
-                                            "url":
-                                                "https://www.zhuishushenqi.com/privacy",
+                                            "url": Config.privacyPolicy,
                                           },
                                         );
                                       },
@@ -198,7 +197,7 @@ class _AgreementState extends State<Agreement> {
                       Global.initData(context);
                       Navigator.pushNamedAndRemoveUntil(
                         context,
-                        'home',
+                        'main_page',
                         (route) => false,
                       );
                     },
