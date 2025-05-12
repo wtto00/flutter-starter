@@ -2,6 +2,8 @@
 
 一个flutter项目模板。
 
+Flutter + Privder + Dio
+
 ## 开始前
 
 1. 准备开发环境
